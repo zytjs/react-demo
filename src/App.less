@@ -1,0 +1,43 @@
+body, div, span, input, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+//去掉number input小箭头
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+.clear::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.form-title {
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.form-wrap {
+    padding: 20px;
+    background-color: #fff;
+
+    .form-btn {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        width: 40%;
+        margin: 20px auto 0;
+        background-color: #5cb85c;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 15px;
+    }
+}

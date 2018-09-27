@@ -1,0 +1,32 @@
+.alert-wrap {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    touch-action: none;
+
+    &.show{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alert-content{
+        position: absolute;
+        top: 50%;
+        width: 80%;
+        padding: 10px 0;
+        background-color: #fff;
+        border-radius: 5px;
+        text-align: center;
+        
+        .alert-info {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+        }
+    }
+}
